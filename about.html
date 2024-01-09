@@ -1,0 +1,88 @@
+<!-- © 2023 All rights reserved by Irene Becker Studio
+    | Tipografía Aesthetic Regurar: https://nirmanavisual.com/product/aesthetic 
+    Licencia Standar a nombre de Irene Herrero Becker-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no" /><!-- viewport  para el responsive-->
+        <title>ROCÍO GUERRERO | ABOUT</title>
+        <link rel="icon" href="img/anagrama.png" sizes="16x16 32x32" type="image/png"><!-- Favicon -->
+        <link rel="stylesheet" type="text/css" href="styles.css" media="screen" /><!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="#" media="screen" /><!-- CSS RESPONSIVE -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><!-- Tipografía Raleway -->
+    </head>
+    <body>
+        <main><!-- portada -->
+
+            <div class="portada_paginas">
+    
+            <section class="navbar_A">
+
+                <a id="superior"href="work.html">WORK</a>
+                <a id="central" href="cv.html">CV</a>
+                <a href="press.html">PRESS</a>
+               
+            </section>
+            <section class="centro_about">
+            <!-- FOTO FONDO -->
+            </section>
+            <section class="navbar_B">
+
+                <a id="superior">ABOUT</a><!-- estoy aquí -->
+                <a id="central" href="more.html">MORE</a>
+                <a href="contact.html">CONTACT</a>
+               
+            </section>
+            </div><!-- cierra portada -->
+    
+        </main><!-- cierre de MAIN -->
+
+        <section class="cuerpo_about">
+            <div class="presentacion">
+                <h1>ROCÍO GUERRERO</h1>
+                <h2>Madrid, 1985.</h2>
+                <p>Cuando visito un museo siempre se producen una o varias llamadas de atención. Éstas se traducen, para mí, en esa persona retratada que, sin tapujos, me mira de frente, me llama, me cuestiona y me traslada a su mundo, invitándome a formar parte de él. Es en ese momento cuando surge una conexión difícil de explicar, pero que existe y te traspasa con una veracidad que a veces cuesta distinguir de la realidad; veracidad que te hace cuestionar la fugacidad del tiempo e, incluso, el momento que estás viviendo.</p>
+                <p>Siempre se produce una interacción doble, ya que no sólo se dialoga con el retratado, sino también, y al mismo tiempo, con el artista. Esto es precisamente lo que yo busco en mi obra, que se cree una reflexión entre el observador y el retratado, que involucre a uno con el otro utilizando la mirada como actor principal.</p>
+                <p>Existe un denominador común en lo que se refiere a la percepción como conocimiento de las respuestas sensoriales a los estímulos que las excitan, cuando se produce una implicación del sujeto que provoca el estímulo y el sujeto que lo recibe: es ese un momento sincero y enigmático de confidencialidad, de reflexión, en el que se cruzan esas miradas que observan, ponen en cuestión y analizan. Es como si los retratados, al mirarnos, no quisieran esconder nada y se creara una atmósfera en la que lo importante está ahí, justo en ese momento y puede que no se vuelva a repetir.</p>
+                <p>Yo quiero transmitir precisamente ese instante en el que se produce el vínculo mágico. Quiero que en mis cuadros aparezca una mujer limpiando, un hombre en un salón, una mujer desnuda sentada u otra vendiendo en su puesto ambulante... y que todos estos personajes nos hagan pensar ¿qué pasa?, ¿qué me preguntan?, ¿qué quieren decirme?, ¿en qué momento y en qué lugar estén atrapados?, y que en su mirada perdure la nuestra.</p>
+            </div>
+            <div class="video">
+
+            </div>
+        </section>
+
+        <footer>
+            <button class="boton_anagrama">
+                <a href="index.html"><img src="img/anagrama.png"></a><!--index-->
+            </button>
+            <section id="ig_copy">
+               <p><a href="https://www.instagram.com/rocioguerrero/"target="_blank">instagram</a></p><!-- instagram -->
+               <p>© 2024 Rocío Guerrero.</p>
+            </section>
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              var elementos = document.querySelectorAll('.portada_paginas a');
+        
+              window.addEventListener('scroll', function() {
+                elementos.forEach(function(elemento) {
+                  var bounding = elemento.getBoundingClientRect();
+                  if (bounding.top < window.innerHeight) {
+                    elemento.classList.add('desplazado');
+                  } else {
+                    elemento.classList.remove('desplazado');
+                  }
+                });
+              });
+            });
+          </script>
+    </body>
+    </html>
