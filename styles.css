@@ -1,0 +1,202 @@
+/* tipografías google REGLAS CSS raleway:
+
+ font-family: 'Raleway', sans-serif;
+ */
+
+ /* TIPOGRAFÍAS */
+
+ @font-face {
+    font-family: 'Aesthetic-Regular'; /* Comprada - https://nirmanavisual.com  - standar*/
+    src: url(tipografías/Aesthetic-Regular.woff2) format('woff2'),
+         url(tipografías/Aesthetic-Regular.woff) format('woff'),
+         url(tipografías/Aesthetic-Regular.ttf) format('truetype');
+     font-style: normal;
+     font-weight: 400;
+ } 
+
+ /* ESTILOS GENERALES */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+   /*  color: red; */
+
+ }
+
+ /* para que no se vean las líneas de los enlces */
+ a:link, a:visited, a:active {
+    text-decoration:none;
+}
+ 
+ body{
+   overflow-x: auto;
+   overflow-y:scroll;
+   position: relative;
+
+     width: 100%;
+     height: auto;
+     background-color: white; 
+     cursor: url(img/cursor_fluor.png) 16 16, auto; 
+
+ }
+ /* PORTADA */
+  main{
+    width: 100%;
+    height: 100vh;
+
+  }
+  .portada{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+     .navbar_A{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+    
+     }
+        .navbar_A a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 75%;
+            height: 12%;
+            font-size: 35px;
+            font-family: 'Aesthetic-Regular';
+            font-style: normal;
+            font-weight: 400;
+        }
+            .navbar_A a:hover{
+                color: #DBFF01;
+
+            }
+        
+     .centro{
+        width: 60%;
+        height: 100%;
+
+        background-image: url(img/FOTO_FONDO.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: top;
+
+     }
+     .navbar_B{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+
+     }
+        .navbar_B a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 75%;
+            height: 12%;
+            font-size: 35px;
+            font-family: 'Aesthetic-Regular';
+            font-style: normal;
+            font-weight: 400;
+        }
+            .navbar_B a:hover{
+                color: #DBFF01;
+
+            }
+        #superior{
+           display: flex;
+           height: 70%;
+           flex-direction: column;
+           justify-content: flex-start;
+
+        }
+footer{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+    
+    .boton_suscribe{
+        width: 90%;
+        height: 48px;
+        border: solid 3px black;
+        border-radius: 16px;
+        font-size: 22px;
+        font-family: 'Aesthetic-Regular';
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color:white;
+
+    }
+         .boton_suscribe:hover{
+            transform: scale(1.02);
+    
+         }
+         footer img{
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+         }
+    
+    #ig_copy{
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+        padding-top: 10px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width:92%
+
+    }
+    #ig_copy p{
+       padding-left: 10px;
+
+    }
+    #ig_copy a:hover{
+        color: #DBFF01;
+ 
+     }
+       
+/* -------- COOKIES -------- */
+#cookieConsentBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.cookie-consent {
+    position: fixed;
+    bottom: 40;
+    left: 40;
+    display: block;/* flex */
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 115px;
+    background-color: #091DD0;
+    color:#F5F5EC;
+    text-align: center;
+
+}
