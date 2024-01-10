@@ -189,16 +189,12 @@ footer{
         font-size: 12px;
         font-family: 'Raleway', sans-serif;
         padding-top: 10px;
-        padding-left: 10px;
+        padding-bottom: 8px;
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width:75%
-
-    }
-    #ig_copy p{
-       padding-left: 10px;
+        align-items:center;
+        justify-content: space-between;
+        width:72%
 
     }
     #ig_copy a:hover{
@@ -417,7 +413,39 @@ footer{
             animation: cambiarColor 3s infinite alternate; 
        
           }
-         
+/* ------------------------PAGINA CV--------------------------------------------- */   
+ .centro_cv{
+    width: 60%;
+    height: 100%;
+
+    background-image: url(img/portadas/cv.png);
+    background-repeat:no-repeat ;
+    background-size: 85%;
+    background-position: center;
+
+ }
+/* ------------------------PAGINA PRESS--------------------------------------------- */   
+  .centro_press{ 
+    width: 60%;
+    height: 100%;
+
+    background-image: url(img/portadas/press.png);
+    background-repeat:no-repeat ;
+    background-size: 85%;
+    background-position: center;
+
+ }
+/* ------------------------PAGINA CONTACT--------------------------------------------- */   
+.centro_contact{
+    width: 60%;
+    height: 100%;
+
+    background-image: url(img/portadas/contact.png);
+    background-repeat:no-repeat ;
+    background-size: 85%;
+    background-position: center;
+
+ }
 /* -------- COOKIES -------- */
 /* #cookieConsentBanner{
     display: flex;
