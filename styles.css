@@ -20,7 +20,6 @@
     margin: 0px;
     padding: 0px;
     color: black;
-   /*  color: red; */
 
  }
 
@@ -36,7 +35,7 @@
 
      width: 100%;
      height: auto;
-     background-color: white; 
+     background-color: rgb(235, 234, 234); 
      cursor: url(img/cursor_fluor.png) 16 16, auto; 
 
  }
@@ -47,12 +46,13 @@
 
   }
   .portada{
-    width: 100%;
+    width: 80%;
     height: 85%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin:0 auto;
   }
   .portada_paginas a{/* en index NO */
     position: relative;
@@ -151,7 +151,7 @@ footer{
 }
     
     .boton_suscribe{
-        width: 90%;
+        width: 73%;
         height: 48px;
         border: solid 3px black;
         border-radius: 16px;
@@ -162,7 +162,8 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center; 
-        background-color:white;
+        /* background-color:white; */
+        background-color: rgb(235, 234, 234);
 
     }
          .boton_suscribe:hover{
@@ -185,7 +186,7 @@ footer{
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        width:92%
+        width:75%
 
     }
     #ig_copy p{
@@ -198,12 +199,13 @@ footer{
      }
 /* ------------------------PAGINA ABOUT--------------------------------------------- */
 .portada_paginas{
-    width: 100%;
+    width: 80%;
     height: 95%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 .centro_about{ /* cambia en cada página */
     width: 60%;
@@ -213,8 +215,23 @@ footer{
     background-repeat:no-repeat ;
     background-size: 85%;
     background-position: center;
+    animation: pase_diapositivas 20s infinite;
 
  }
+      @keyframes pase_diapositivas{
+        0%,100%{
+            background-image: url(img/portadas/about.png);
+        }
+        23%{
+            background-image: url(img/portadas/about_2.png);
+        }
+        43%{
+            background-image: url(img/portadas/about_3.png);
+        }
+        63%{
+            background-image: url(img/portadas/about_4.png);
+        }
+      }
  .cuerpo_about{
     width: 100%;
     height: auto;
@@ -270,19 +287,21 @@ footer{
 
 /* footer general páginas */  
  .boton_anagrama{
-    width: 90%;
+    width: 73%;
     height: 48px;
     border: solid 3px black;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color:white;
+   /*  background-color:white; */
+    background-color: rgb(235, 234, 234);
 
 }
      .boton_anagrama a{
         height: 80%;
         padding-top: 10px;
+  
      }
          .boton_anagrama a:hover{
             transform: scale(1.08);
