@@ -12,6 +12,7 @@
         <link rel="icon" href="img/anagrama.png" sizes="16x16 32x32" type="image/png"><!-- Favicon -->
         <link rel="stylesheet" type="text/css" href="styles.css" media="screen" /><!-- CSS -->
         <link rel="stylesheet" type="text/css" href="#" media="screen" /><!-- CSS RESPONSIVE -->
+        <link rel="stylesheet" type="text/js" href="codigo.js" media="screen" /><!-- JS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,44 +24,39 @@
 
             <div class="portada_paginas">
     
-            <section class="navbar_A">
+                <section class="navbar_A">
 
-                <a id="superior">WORK</a><!-- estoy aquí -->
-                <a id="central" href="cv.html">CV</a>
-                <a href="press.html">PRESS</a>
-               
-            </section>
-            <section class="centro_work">
-            <!-- FOTO FONDO / hacer carrusel -->
-            </section>
-            <section class="navbar_B">
-
-                <a id="superior" href="about.html">ABOUT</a>
-                <a id="central" href="more.html">MORE</a>
-                <a href="contact.html">CONTACT</a>
-               
-            </section>
+                    <a id="superior">WORK</a>
+                    <a id="central" href="cv.html" >CV</a>
+                    <a href="press.html">PRESS</a>
+                   
+                </section>
+        
+                <section class="centro_work">
+                <!-- FOTO FONDO -->
+                </section>
+                <section class="navbar_B">
+    
+                    <a id="superior" href="about.html">ABOUT</a><!-- estoy aquí -->
+                    <a id="central" href="more.html">MORE</a>
+                    <a href="contact.html">CONTACT</a>
+                   
+                </section>
             </div><!-- cierra portada -->
+            <footer class="pie">
+                <button class="boton_anagrama">
+                    <a href="index.html"><img src="img/anagrama.png"></a><!--index-->
+                </button>
+            </footer>
         </main><!-- cierre de MAIN -->
-        <section class="obras">
-            <div>
-                <a><img scr="#"></a><!-- retrato -->
-            </div>
-            <div>
-                <a><img scr="#"></a><!-- 1 viaje 3€ -->
-            </div>
-            <div>
-                <a><img scr="#"></a><!-- la quema -->
-            </div>
-            <div>
-                <a><img scr="#"></a><!-- la percepción de lo íntimo -->
-            </div>
-            <div>
-                <a><img scr="#"></a><!-- nudus -->
-            </div>
-            <div>
-                <a><img scr="#"></a><!-- escultura -->
-            </div>
+        <section class="series">
+            
+                <a href="#"><img src="img/art_work/retrato.png"></a><!-- retrato -->
+                <a href="#"><img src="img/art_work/un_viaje.png"></a><!-- 1 viaje 3€ -->
+                <a href="#"><img src="img/art_work/la_quema.png"></a><!-- la quema -->
+                <a href="#"><img src="img/art_work/percepcion_intimo.png"></a><!-- la percepción de lo íntimo -->
+                <a href="#"><img src="img/art_work/nudus.png"></a><!-- nudus -->
+                <a href="#"><img src="img/art_work/escultura.png"></a><!-- escultura -->
 
         </section>
         <footer>
@@ -73,6 +69,21 @@
             </section>
         </footer>
 
-       
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+               var elementos = document.querySelectorAll('.portada_paginas a');
+         
+               window.addEventListener('scroll', function() {
+                 elementos.forEach(function(elemento) {
+                   var bounding = elemento.getBoundingClientRect();
+                   if (bounding.top < window.innerHeight) {
+                     elemento.classList.add('desplazado_work');
+                   } else {
+                     elemento.classList.remove('desplazado_work');
+                   }
+                 });
+               });
+             });
+         </script>
     </body>
     </html>

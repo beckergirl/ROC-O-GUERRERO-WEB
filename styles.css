@@ -53,12 +53,14 @@
     justify-content: center;
     align-items: center;
     margin:0 auto;
+
   }
   .portada_paginas a{/* en index NO */
     position: relative;
     transition: transform 4s ease;
 
   }
+
      .navbar_A{
         width: 20%;
         height: 100%;
@@ -66,10 +68,15 @@
         flex-direction: column;
         justify-content: end;
         align-items: flex-end;
+        position: relative;
     
      }
-            .desplazado {
-                transform: translateY(1000px);
+            .desplazado_about {
+                transform: translateY(1070px);
+
+            }
+            .desplazado_work {
+                transform: translateY(2805px);
 
             }
 
@@ -84,6 +91,7 @@
             font-family: 'Aesthetic-Regular';
             font-style: normal;
             font-weight: 400;
+
         }
             .navbar_A a:hover{
                 color: #DBFF01;
@@ -108,7 +116,7 @@
         align-items: flex-start;
 
         position: relative;
-        transition: transform 4s ease-in;
+        transition: transform 4s ease;
 
      }
         .navbar_B a{
@@ -200,13 +208,23 @@ footer{
 /* ------------------------PAGINA ABOUT--------------------------------------------- */
 .portada_paginas{
     width: 80%;
-    height: 95%;
+    height: 85%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
+  .pie{
+    animation: desaparecer 6s forwards;
+
+  }
+  @keyframes desaparecer {
+    to {
+        opacity: 0; /* Hace que la opacidad sea 0 al final de la animación */
+    }
+}
+
 .centro_about{ /* cambia en cada página */
     width: 60%;
     height: 100%;
@@ -243,7 +261,7 @@ footer{
     padding-bottom: 50px;
  }
       .presentacion{
-        width: 50%;/* 60? */
+        width: 40%;/* ahora al pasar a 80 ?*/
         height: auto;
         padding-top: 50px;
   
@@ -265,7 +283,7 @@ footer{
 
         }
           .presentacion p{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 25px;
             font-family: 'Raleway', sans-serif;
             font-style: normal;
@@ -277,10 +295,9 @@ footer{
     .video{
         width: 60%;
         height: auto;
-       /*  border:solid 3px red; */
         background-clip:url() ;
         background-position: center;
-        background-size: 70%;/* ? */
+        background-size: 70%;
         padding-bottom: 50px;
 
     }
@@ -319,7 +336,88 @@ footer{
     background-position: center;
 
  }
+      .series{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+      }
+          .series a{
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+
+          }
+          .series img{
+            width: 60%;
+
+          }
+          .series img:hover{
+            cursor: url(img/cursor_fluor.png) 16 16, auto;
+            animation: cambiarColor 3s infinite alternate; 
        
+          }
+          @keyframes cambiarColor {
+            0% {
+              box-shadow: 0 0 30px  #DBFF01;
+            }
+            50% {
+              box-shadow: 0 0 30px rgba(252, 69, 145, 0.8);
+            }
+            100% {
+              box-shadow: 0 0 30px rgba(3, 235, 231, 0.8);
+            }
+          }
+
+/* ------------------------PAGINA MORE--------------------------------------------- */
+.centro_more{ /* cambia en cada página */
+    width: 60%;
+    height: 100%;
+
+    background-image: url(img/portadas/more.png);
+    background-repeat:no-repeat ;
+    background-size: 85%;
+    background-position: center;
+
+ }
+      .series{/* espacios distintos */
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+      }
+          .series a{
+            width: 70%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+
+          }
+          .series img{
+            width: 60%;
+
+          }
+          .series img:hover{
+            cursor: url(img/cursor_fluor.png) 16 16, auto;
+            animation: cambiarColor 3s infinite alternate; 
+       
+          }
+         
 /* -------- COOKIES -------- */
 /* #cookieConsentBanner{
     display: flex;

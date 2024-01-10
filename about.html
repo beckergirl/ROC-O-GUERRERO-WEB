@@ -12,6 +12,7 @@
         <link rel="icon" href="img/anagrama.png" sizes="16x16 32x32" type="image/png"><!-- Favicon -->
         <link rel="stylesheet" type="text/css" href="styles.css" media="screen" /><!-- CSS -->
         <link rel="stylesheet" type="text/css" href="#" media="screen" /><!-- CSS RESPONSIVE -->
+        <link rel="stylesheet" type="text/js" href="codigo.js" media="screen" /><!-- JS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,13 +26,14 @@
     
             <section class="navbar_A">
 
-                <a id="superior"href="work.html">WORK</a>
-                <a id="central" href="cv.html">CV</a>
+                <a id="superior"href="work.html" >WORK</a>
+                <a id="central" href="cv.html" >CV</a>
                 <a href="press.html">PRESS</a>
                
             </section>
+    
             <section class="centro_about">
-            <!-- FOTO FONDO -->
+            <!-- FOTO FONDO / carrusel css -->
             </section>
             <section class="navbar_B">
 
@@ -41,6 +43,11 @@
                
             </section>
             </div><!-- cierra portada -->
+            <footer class="pie">
+              <button class="boton_anagrama">
+                  <a href="index.html"><img src="img/anagrama.png"></a><!--index-->
+              </button>
+          </footer>
     
         </main><!-- cierre de MAIN -->
 
@@ -53,9 +60,9 @@
                 <p>Existe un denominador común en lo que se refiere a la percepción como conocimiento de las respuestas sensoriales a los estímulos que las excitan, cuando se produce una implicación del sujeto que provoca el estímulo y el sujeto que lo recibe: es ese un momento sincero y enigmático de confidencialidad, de reflexión, en el que se cruzan esas miradas que observan, ponen en cuestión y analizan. Es como si los retratados, al mirarnos, no quisieran esconder nada y se creara una atmósfera en la que lo importante está ahí, justo en ese momento y puede que no se vuelva a repetir.</p>
                 <p>Yo quiero transmitir precisamente ese instante en el que se produce el vínculo mágico. Quiero que en mis cuadros aparezca una mujer limpiando, un hombre en un salón, una mujer desnuda sentada u otra vendiendo en su puesto ambulante... y que todos estos personajes nos hagan pensar ¿qué pasa?, ¿qué me preguntan?, ¿qué quieren decirme?, ¿en qué momento y en qué lugar estén atrapados?, y que en su mirada perdure la nuestra.</p>
             </div>
-            <div class="video">
+          <!--   <div class="video">
 
-            </div>
+            </div> -->
         </section>
 
         <footer>
@@ -67,22 +74,21 @@
                <p>© 2024 Rocío Guerrero.</p>
             </section>
         </footer>
-
         <script>
-            document.addEventListener("DOMContentLoaded", function() {
+           document.addEventListener("DOMContentLoaded", function() {
               var elementos = document.querySelectorAll('.portada_paginas a');
         
               window.addEventListener('scroll', function() {
                 elementos.forEach(function(elemento) {
                   var bounding = elemento.getBoundingClientRect();
                   if (bounding.top < window.innerHeight) {
-                    elemento.classList.add('desplazado');
+                    elemento.classList.add('desplazado_about');
                   } else {
-                    elemento.classList.remove('desplazado');
+                    elemento.classList.remove('desplazado_about');
                   }
                 });
               });
             });
-          </script>
+        </script>
     </body>
     </html>
